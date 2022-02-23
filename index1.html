@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myonlinefood.com</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet"media="screen and (max-width:1050px)" href="phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Anton', sans-serif;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            margin: 32px 32px;
+        }
+
+        .logo img {
+            margin: -20px -29px;
+            height: 87px;
+            width: 120px;
+        }
+
+        #navbar {display: flex;
+            align-items: center;
+            position: relative;
+            top: 0;
+        }
+
+        #navbar ul {
+            display: flex;
+            width: 100%;
+        }
+
+        #navbar::before {
+            content: "";
+
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            display: block;
+            padding: 23px 23px;
+            margin: 23px 23px;
+            text-decoration: none;
+            color:black;
+            font-family: 'Bangers', cursive;
+            font-family: 'Anton', sans-serif;
+        }
+
+        #navbar ul li a:hover {
+            color: white;
+        ;
+            display: block;
+            padding: 23px 23px;
+            margin: 23px 23px;
+            text-decoration: none;
+
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 53px 132px;
+            height: 716px;
+            justify-content: center;
+            align-items: center;
+            color: black;
+        }
+
+        #home::before {
+            content: "";
+            background: url('photo-1623516701833-a16e67293373.jpg')no-repeat center center/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            top: 0;
+        }
+
+        #home h1 {
+            color: black;
+            text-align: center;
+            font-size: 4rem;
+            font-family: 'Anton', sans-serif;
+            color: white;
+        }
+
+        #home {
+            font-family: 'Anton', sans-serif;
+        }
+
+        .btn {
+            padding: 9px 50px;
+            border: 2px solid white;
+            background-color: rgb(226, 78, 78);
+            margin: 11px 380px;
+            border-radius: 18px;
+            font-family: 'Anton', sans-serif;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+
+            padding: 9px 50px;
+            border: 2px solid white;
+            background-color: rgb(98, 211, 88);
+            margin: 11px 380px;
+            border-radius: 18px;
+            color: white;
+        }
+
+        #home p {
+            color: rgb(219, 64, 64) margin: 2px 2px;
+        }
+
+        .center {
+            text-align: center;
+            font-size: 40px;
+        }
+
+
+
+        #services {
+
+            display: flex;
+            margin: 34px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+           
+            height: 300px;
+            width: 800px;
+            padding: 34px;
+            margin: 3px 6px;
+            border-radius: 23px;
+            transition-property: all;
+            transition-duration: 1s;
+            text-align: center;
+        }
+
+        .box:hover {
+            height: 325px;
+            width: 825px;
+            cursor: pointer;
+        }
+
+        #services .box img {
+            height: 100px;
+            width: 100px;
+            display: block;
+            margin: auto;
+
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .clients{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .clients img{
+            height: 155px;
+            width: 130px;
+            margin: -3px 34px;
+        }
+        .client-section::before{
+            content: "";
+            background: url(istockphoto-1129342452-612x612.jpg)no-repeat center center/cover;
+            position: absolute;
+            height: 50%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="mr-food-logo-design-template-260nw-1924283024.jpg" alt="myonlinefood.com">
+        </div>
+        <ul>
+            <li class="item"> <a href="">Home</a> </li>
+            <li class="item"> <a href="">Menu</a></li>
+            <li class="item"> <a href="">Delivery</a> </li>
+            <li class="item"> <a href="">Contact Us</a> </li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1>Welcome to our Resturant</h1>
+        <p>This is the No.1 Resturant in Jaipur which provides very delightful food. We also provide our customers
+            delivery to there door steps.</p>
+        <p>Our Restuarant is colobrated with The Tech Giants such as Microsoft,Goldman Sachs,HP and Apple.And supported
+            by the THE TAJ.</p>
+        <button class="btn">Order Now</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="download (2).jpg" alt="">
+                <h2>
+                    Food Ordering
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores distinctio praesentium quibusdam
+                    voluptates velit sequi. Debitis atque vero et accusantium recusandae rem voluptates iure, molestiae
+                    ipsum delectus placeat omnis ut. Et unde, minima qui aliquam sit aperiam corrupti quos dolores?</p>
+            </div>
+            <div class="box">
+                <img src="photo-1620147123631-7291b2b5a4f7.jpg" alt="">
+                <h2>
+                    Food Catring
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cupiditate voluptate voluptas
+                    accusamus dicta reiciendis neque ipsum asperiores. Quibusdam perferendis quis nisi rerum doloremque
+                    iusto facilis eaque, distinctio veniam? Similique nihil distinctio perspiciatis esse?</p>
+            </div>
+            <div class="box">
+                <img src="images (2).jpg" alt="">
+                <h2>
+                    Bulk Ordering
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cupiditate voluptate voluptas
+                    accusamus dicta reiciendis neque ipsum asperiores. Quibusdam perferendis quis nisi rerum doloremque
+                    iusto facilis eaque, distinctio veniam? Similique nihil distinctio perspiciatis esse?</p>
+            </div>
+        </div>
+    </section>
+    <section class="client-section">
+        <h1 class="h-primary center">Our Partners</h1>
+        <div class="clients">
+            <div class="clientitem"><img src="p7zz5dxZ_400x400.jpg" alt="">
+            </div>
+            <div class="clientitem"><img src="download (1).png" alt="">
+            </div>
+            <div class="clientitem"><img src="download.png" alt="">
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
